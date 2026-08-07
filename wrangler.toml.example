@@ -1,0 +1,20 @@
+name = "ops-interview-feishu-bot"
+main = "feishu-worker.mjs"
+compatibility_date = "2026-08-01"
+
+[triggers]
+crons = ["0 1 * * *", "0 12 * * 0"]
+
+[[kv_namespaces]]
+binding = "TRAINING_STATE"
+id = "创建 KV 后填入"
+
+# 通过 secrets 配置：
+# FEISHU_APP_ID
+# FEISHU_APP_SECRET
+# FEISHU_RECEIVER_ID
+# OPENAI_API_KEY
+# 普通变量：
+[vars]
+FEISHU_RECEIVE_ID_TYPE = "open_id"
+OPENAI_MODEL = "gpt-5-mini"
