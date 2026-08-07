@@ -1,0 +1,7 @@
+{
+  "name": "ops-interview-feishu-long-connection",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node index.mjs" },
+  "dependencies": { "@larksuiteoapi/node-sdk": "^1.27.0" }
+}
